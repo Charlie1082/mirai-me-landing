@@ -46,7 +46,9 @@ export async function checkDuplicate(email: string): Promise<boolean> {
 
 export async function appendRegistration(
   email: string,
-  locale: string
+  locale: string,
+  country: string,
+  city: string
 ): Promise<boolean> {
   const sheets = getSheets();
   if (!sheets || !SPREADSHEET_ID) return false;
@@ -54,11 +56,11 @@ export async function appendRegistration(
   try {
     await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
-      range: `${SHEET_NAME}!A:D`,
+      range: `${SHEET_NAME}!A:F`,
       valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [
-          [email, locale, new Date().toISOString(), "landing-page"],
+          [email, locale, new Date().toISOString(), "landing-page", country, city],
         ],
       },
     });

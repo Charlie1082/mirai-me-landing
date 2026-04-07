@@ -84,6 +84,8 @@ export async function POST(request: NextRequest) {
 
   const { email, locale } = parsed.data;
   const normalizedEmail = email.toLowerCase().trim();
+  const country = request.headers.get("x-vercel-ip-country") || "unknown";
+  const city = request.headers.get("x-vercel-ip-city") || "unknown";
 
   // --- Google Sheets mode ---
   if (isGoogleSheetsConfigured()) {
@@ -98,7 +100,9 @@ export async function POST(request: NextRequest) {
 
       const success = await appendRegistration(
         normalizedEmail,
-        locale || "unknown"
+        locale || "unknown",
+        country,
+        city
       );
       if (!success) {
         return NextResponse.json(
