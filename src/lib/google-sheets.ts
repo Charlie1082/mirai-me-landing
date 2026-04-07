@@ -63,9 +63,8 @@ export async function appendRegistration(
       },
     });
     return true;
-  } catch (err) {
-    console.error("appendRegistration error:", err);
-    throw err;
+  } catch {
+    return false;
   }
 }
 
