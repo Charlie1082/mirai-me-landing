@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none">
+  <defs>
+    <radialGradient id="petalGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0.2"/>
+    </radialGradient>
+  </defs>
+  <!-- Sakura / cherry blossom -->
+  <!-- Petals (5 petals arranged in circle) -->
+  <ellipse cx="25" cy="14" rx="7" ry="10" fill="url(#petalGrad)" transform="rotate(0, 25, 25)"/>
+  <ellipse cx="25" cy="14" rx="7" ry="10" fill="url(#petalGrad)" transform="rotate(72, 25, 25)"/>
+  <ellipse cx="25" cy="14" rx="7" ry="10" fill="url(#petalGrad)" transform="rotate(144, 25, 25)"/>
+  <ellipse cx="25" cy="14" rx="7" ry="10" fill="url(#petalGrad)" transform="rotate(216, 25, 25)"/>
+  <ellipse cx="25" cy="14" rx="7" ry="10" fill="url(#petalGrad)" transform="rotate(288, 25, 25)"/>
+  <!-- Petal notches (sakura characteristic) -->
+  <circle cx="25" cy="8" r="2" fill="#fefdfb" opacity="0.3" transform="rotate(0, 25, 25)"/>
+  <circle cx="25" cy="8" r="2" fill="#fefdfb" opacity="0.3" transform="rotate(72, 25, 25)"/>
+  <circle cx="25" cy="8" r="2" fill="#fefdfb" opacity="0.3" transform="rotate(144, 25, 25)"/>
+  <circle cx="25" cy="8" r="2" fill="#fefdfb" opacity="0.3" transform="rotate(216, 25, 25)"/>
+  <circle cx="25" cy="8" r="2" fill="#fefdfb" opacity="0.3" transform="rotate(288, 25, 25)"/>
+  <!-- Center -->
+  <circle cx="25" cy="25" r="5" fill="#fef08a" opacity="0.6"/>
+  <circle cx="25" cy="25" r="3" fill="#fde047" opacity="0.4"/>
+  <!-- Stamen dots -->
+  <circle cx="23" cy="22" r="1" fill="#f9a8d4" opacity="0.5"/>
+  <circle cx="27" cy="22" r="1" fill="#f9a8d4" opacity="0.5"/>
+  <circle cx="25" cy="28" r="1" fill="#f9a8d4" opacity="0.4"/>
+</svg>

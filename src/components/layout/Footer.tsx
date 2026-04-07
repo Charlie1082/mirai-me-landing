@@ -1,0 +1,110 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+import { ExternalLink, Globe, Mail } from "lucide-react";
+
+export default function Footer() {
+  const t = useTranslations("footer");
+
+  return (
+    <footer className="bg-warm-900 text-white py-16">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <span className="font-display text-xl font-bold text-primary-300">
+              MIRAI-ME
+            </span>
+            <p className="mt-3 text-sm text-warm-300 leading-relaxed">
+              {t("tagline")}
+            </p>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-warm-300 mb-4">
+              {t("service")}
+            </h4>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="#about" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  MIRAI-ME
+                </a>
+              </li>
+              <li>
+                <a href="#how-it-works" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  {t("service")}
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-warm-300 mb-4">
+              {t("legal")}
+            </h4>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="/terms" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  {t("terms")}
+                </a>
+              </li>
+              <li>
+                <a href="/privacy" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  {t("privacy")}
+                </a>
+              </li>
+              <li>
+                <a href="/legal" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  {t("tokushoho")}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-warm-300 mb-4">
+              {t("followUs")}
+            </h4>
+            <div className="flex gap-4">
+              <a
+                href="https://line.me"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-warm-800 text-warm-300 transition-colors hover:bg-mint-400 hover:text-white"
+                aria-label="LINE"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-warm-800 text-warm-300 transition-colors hover:bg-primary-500 hover:text-white"
+                aria-label="Web"
+              >
+                <Globe className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-warm-800 text-warm-300 transition-colors hover:bg-secondary-400 hover:text-white"
+                aria-label="External"
+              >
+                <ExternalLink className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-warm-800 pt-8 text-center text-sm text-warm-500">
+          {t("copyright")}
+        </div>
+      </div>
+    </footer>
+  );
+}

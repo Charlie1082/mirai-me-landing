@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+  <!-- Ocean scene - Blue theme -->
+  <defs>
+    <linearGradient id="s2ocean" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7cd4fd" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#7cd4fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a8e4ff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <!-- Book spread -->
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="#fefdfb"/>
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="url(#s2ocean)"/>
+  <line x1="140" y1="5" x2="140" y2="195" stroke="#7cd4fd" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Left page - text -->
+  <rect x="15" y="30" width="100" height="6" rx="3" fill="#7cd4fd" opacity="0.4"/>
+  <rect x="15" y="50" width="110" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="62" width="100" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="74" width="108" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="86" width="95" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="98" width="105" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="110" width="90" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <!-- Shell decoration -->
+  <path d="M50 155 Q55 145 60 155 Q55 150 50 155 Z" fill="#f9a8d4" opacity="0.3"/>
+  <path d="M55 155 Q60 148 65 155" stroke="#f9a8d4" stroke-width="1" stroke-linecap="round" opacity="0.3" fill="none"/>
+
+  <!-- Right page - Ocean scene -->
+  <!-- Waves -->
+  <path d="M145 120 Q165 110 185 120 Q205 130 225 120 Q245 110 270 120 L270 200 L145 200 Z" fill="#7cd4fd" opacity="0.2"/>
+  <path d="M145 135 Q165 125 185 135 Q205 145 225 135 Q245 125 270 135 L270 200 L145 200 Z" fill="#7cd4fd" opacity="0.15"/>
+  <path d="M145 150 Q165 140 185 150 Q205 160 225 150 Q245 140 270 150 L270 200 L145 200 Z" fill="#7cd4fd" opacity="0.1"/>
+  <!-- Whale -->
+  <ellipse cx="210" cy="110" rx="30" ry="15" fill="#7cd4fd" opacity="0.3"/>
+  <ellipse cx="185" cy="108" rx="8" ry="6" fill="#7cd4fd" opacity="0.25"/>
+  <path d="M238 105 Q250 95 248 110 Q246 115 238 112" fill="#7cd4fd" opacity="0.3"/>
+  <circle cx="190" cy="106" r="2" fill="#292524" opacity="0.12"/>
+  <!-- Water spout -->
+  <path d="M210 95 Q208 85 205 80" stroke="#a8e4ff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M210 95 Q212 85 215 80" stroke="#a8e4ff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <!-- Fish -->
+  <ellipse cx="175" cy="145" rx="6" ry="3.5" fill="#f9a8d4" opacity="0.35"/>
+  <path d="M181 145 L186 141 L186 149 Z" fill="#f9a8d4" opacity="0.3"/>
+  <circle cx="173" cy="144" r="1" fill="#292524" opacity="0.1"/>
+  <!-- Bubbles -->
+  <circle cx="195" cy="130" r="3" fill="#fefdfb" opacity="0.2"/>
+  <circle cx="200" cy="140" r="2" fill="#fefdfb" opacity="0.15"/>
+  <circle cx="220" cy="135" r="2.5" fill="#fefdfb" opacity="0.15"/>
+  <!-- Sun -->
+  <circle cx="250" cy="25" r="15" fill="#fef08a" opacity="0.25"/>
+  <!-- Cloud -->
+  <ellipse cx="190" cy="35" rx="20" ry="8" fill="white" opacity="0.3"/>
+  <ellipse cx="180" cy="32" rx="12" ry="7" fill="white" opacity="0.25"/>
+</svg>

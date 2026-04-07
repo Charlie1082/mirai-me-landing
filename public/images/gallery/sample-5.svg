@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+  <!-- Animal scene - Mint/Yellow theme -->
+  <defs>
+    <linearGradient id="s5bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#bbf7d0" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Book spread -->
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="#fefdfb"/>
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="url(#s5bg)"/>
+  <line x1="140" y1="5" x2="140" y2="195" stroke="#bbf7d0" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Left page - Animal scene -->
+  <!-- Grass -->
+  <ellipse cx="70" cy="170" rx="65" ry="18" fill="#bbf7d0" opacity="0.25"/>
+  <!-- Sun -->
+  <circle cx="110" cy="30" r="16" fill="#fef08a" opacity="0.3"/>
+  <!-- Bear -->
+  <g opacity="0.5">
+    <!-- Body -->
+    <ellipse cx="55" cy="148" rx="15" ry="18" fill="#fef08a" opacity="0.6"/>
+    <!-- Head -->
+    <circle cx="55" cy="125" r="12" fill="#fef08a" opacity="0.6"/>
+    <!-- Ears -->
+    <circle cx="45" cy="116" r="5" fill="#fef08a" opacity="0.5"/>
+    <circle cx="65" cy="116" r="5" fill="#fef08a" opacity="0.5"/>
+    <circle cx="45" cy="116" r="3" fill="#fde047" opacity="0.3"/>
+    <circle cx="65" cy="116" r="3" fill="#fde047" opacity="0.3"/>
+    <!-- Eyes -->
+    <circle cx="50" cy="124" r="2" fill="#292524" opacity="0.15"/>
+    <circle cx="60" cy="124" r="2" fill="#292524" opacity="0.15"/>
+    <!-- Nose -->
+    <ellipse cx="55" cy="129" rx="2.5" ry="2" fill="#292524" opacity="0.1"/>
+    <!-- Mouth -->
+    <path d="M53 131 Q55 134 57 131" stroke="#292524" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.1"/>
+  </g>
+  <!-- Cat -->
+  <g opacity="0.45">
+    <!-- Body -->
+    <ellipse cx="95" cy="150" rx="10" ry="13" fill="#e9d5ff" opacity="0.6"/>
+    <!-- Head -->
+    <circle cx="95" cy="132" r="9" fill="#e9d5ff" opacity="0.6"/>
+    <!-- Ears (pointed) -->
+    <path d="M87 126 L84 115 L91 123" fill="#e9d5ff" opacity="0.5"/>
+    <path d="M103 126 L106 115 L99 123" fill="#e9d5ff" opacity="0.5"/>
+    <!-- Eyes -->
+    <ellipse cx="91" cy="131" rx="2" ry="2.5" fill="#292524" opacity="0.15"/>
+    <ellipse cx="99" cy="131" rx="2" ry="2.5" fill="#292524" opacity="0.15"/>
+    <!-- Whiskers -->
+    <line x1="83" y1="134" x2="89" y2="135" stroke="#292524" stroke-width="0.5" stroke-opacity="0.08" stroke-linecap="round"/>
+    <line x1="83" y1="137" x2="89" y2="136" stroke="#292524" stroke-width="0.5" stroke-opacity="0.08" stroke-linecap="round"/>
+    <line x1="101" y1="135" x2="107" y2="134" stroke="#292524" stroke-width="0.5" stroke-opacity="0.08" stroke-linecap="round"/>
+    <line x1="101" y1="136" x2="107" y2="137" stroke="#292524" stroke-width="0.5" stroke-opacity="0.08" stroke-linecap="round"/>
+    <!-- Tail -->
+    <path d="M105 155 Q115 145 118 150" stroke="#e9d5ff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  </g>
+  <!-- Flowers -->
+  <circle cx="25" cy="158" r="4" fill="#f9a8d4" opacity="0.3"/>
+  <circle cx="25" cy="158" r="2" fill="#fef08a" opacity="0.3"/>
+  <circle cx="115" cy="162" r="3.5" fill="#7cd4fd" opacity="0.25"/>
+  <circle cx="115" cy="162" r="1.5" fill="#fef08a" opacity="0.25"/>
+  <!-- Butterflies -->
+  <g opacity="0.3" transform="translate(80, 80)">
+    <ellipse cx="-4" cy="0" rx="4" ry="6" fill="#f9a8d4" transform="rotate(-20)"/>
+    <ellipse cx="4" cy="0" rx="4" ry="6" fill="#f9a8d4" transform="rotate(20)"/>
+    <line x1="0" y1="-3" x2="0" y2="3" stroke="#292524" stroke-width="0.5" stroke-opacity="0.15"/>
+  </g>
+
+  <!-- Right page - Text -->
+  <rect x="155" y="30" width="100" height="6" rx="3" fill="#bbf7d0" opacity="0.4"/>
+  <rect x="155" y="50" width="108" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="155" y="62" width="95" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="155" y="74" width="105" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="155" y="86" width="100" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="155" y="98" width="110" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="155" y="110" width="90" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="155" y="122" width="100" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <!-- Paw print -->
+  <circle cx="240" cy="165" r="4" fill="#bbf7d0" opacity="0.2"/>
+  <circle cx="236" cy="159" r="2" fill="#bbf7d0" opacity="0.15"/>
+  <circle cx="244" cy="159" r="2" fill="#bbf7d0" opacity="0.15"/>
+  <circle cx="234" cy="163" r="1.5" fill="#bbf7d0" opacity="0.15"/>
+  <circle cx="246" cy="163" r="1.5" fill="#bbf7d0" opacity="0.15"/>
+</svg>

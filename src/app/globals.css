@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* === Brand Colors === */
+  --color-cream: #fefdfb;
+  --color-cream-dark: #f8f5f0;
+
+  --color-primary-50: #eff9ff;
+  --color-primary-100: #d6eaf8;
+  --color-primary-200: #a8d4f0;
+  --color-primary-300: #7cd4fd;
+  --color-primary-400: #4ab8e8;
+  --color-primary-500: #2a9fd4;
+  --color-primary-600: #1a7fb0;
+
+  --color-secondary-50: #fef2f8;
+  --color-secondary-100: #fde6f2;
+  --color-secondary-200: #fbbfe0;
+  --color-secondary-300: #f9a8d4;
+  --color-secondary-400: #f472b6;
+
+  --color-accent-100: #fef9c3;
+  --color-accent-200: #fef08a;
+  --color-accent-300: #fde047;
+
+  --color-mint-50: #f0fdf4;
+  --color-mint-100: #dcfce7;
+  --color-mint-200: #bbf7d0;
+  --color-mint-300: #86efac;
+  --color-mint-400: #4ade80;
+
+  --color-lavender-50: #faf5ff;
+  --color-lavender-100: #f3e8ff;
+  --color-lavender-200: #e9d5ff;
+  --color-lavender-300: #d8b4fe;
+
+  --color-warm-50: #fafaf9;
+  --color-warm-100: #f5f5f4;
+  --color-warm-200: #e7e5e4;
+  --color-warm-300: #d6d3d1;
+  --color-warm-500: #78716c;
+  --color-warm-600: #57534e;
+  --color-warm-700: #44403c;
+  --color-warm-800: #292524;
+  --color-warm-900: #1c1917;
+
+  /* === Fonts === */
+  --font-sans: var(--font-noto-sans-jp), var(--font-noto-sans-kr), "Hiragino Sans", "Meiryo", sans-serif;
+  --font-display: var(--font-rounded), var(--font-noto-sans-jp), sans-serif;
+}
+
+/* === Base Styles === */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-warm-800);
+  font-family: var(--font-sans);
+}
+
+/* === Selection Color === */
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--color-warm-900);
+}

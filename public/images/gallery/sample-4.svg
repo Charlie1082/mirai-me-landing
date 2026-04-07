@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+  <!-- Castle scene - Pink/Lavender theme -->
+  <defs>
+    <linearGradient id="s4sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e9d5ff" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Book spread -->
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="#fefdfb"/>
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="url(#s4sky)"/>
+  <line x1="140" y1="5" x2="140" y2="195" stroke="#f9a8d4" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Left page - Text -->
+  <rect x="15" y="30" width="100" height="6" rx="3" fill="#f9a8d4" opacity="0.4"/>
+  <rect x="15" y="50" width="110" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="62" width="100" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="74" width="108" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="86" width="90" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="98" width="105" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="110" width="95" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <!-- Heart deco -->
+  <path d="M50,155 Q50,149 56,149 Q62,149 62,157 L56,163 L50,157 Z" fill="#f9a8d4" opacity="0.2"/>
+
+  <!-- Right page - Castle illustration -->
+  <!-- Hills -->
+  <ellipse cx="210" cy="175" rx="70" ry="25" fill="#bbf7d0" opacity="0.2"/>
+  <ellipse cx="240" cy="180" rx="40" ry="15" fill="#bbf7d0" opacity="0.15"/>
+  <!-- Castle -->
+  <!-- Main tower -->
+  <rect x="195" y="80" width="30" height="80" rx="3" fill="#e9d5ff" opacity="0.35"/>
+  <!-- Side towers -->
+  <rect x="175" y="100" width="22" height="60" rx="3" fill="#e9d5ff" opacity="0.3"/>
+  <rect x="223" y="100" width="22" height="60" rx="3" fill="#e9d5ff" opacity="0.3"/>
+  <!-- Tower tops (cone) -->
+  <path d="M185 100 L175 100 L186 75 L197 100 Z" fill="#f9a8d4" opacity="0.3"/>
+  <path d="M210 80 L195 80 L210 50 L225 80 Z" fill="#f9a8d4" opacity="0.35"/>
+  <path d="M234 100 L223 100 L234 75 L245 100 Z" fill="#f9a8d4" opacity="0.3"/>
+  <!-- Flags -->
+  <line x1="210" y1="50" x2="210" y2="38" stroke="#292524" stroke-width="1" stroke-opacity="0.1" stroke-linecap="round"/>
+  <path d="M210 38 L220 42 L210 46" fill="#f9a8d4" opacity="0.4"/>
+  <!-- Windows -->
+  <rect x="182" y="115" width="6" height="8" rx="3" fill="#fef08a" opacity="0.3"/>
+  <rect x="205" y="95" width="8" height="12" rx="4" fill="#fef08a" opacity="0.3"/>
+  <rect x="231" y="115" width="6" height="8" rx="3" fill="#fef08a" opacity="0.3"/>
+  <!-- Door -->
+  <rect x="204" y="140" width="12" height="20" rx="6" fill="#c4b5fd" opacity="0.3"/>
+  <!-- Path to castle -->
+  <path d="M210 160 Q210 175 200 185 Q190 195 170 195" stroke="#e9d5ff" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.2"/>
+  <!-- Clouds -->
+  <ellipse cx="175" cy="40" rx="18" ry="7" fill="white" opacity="0.3"/>
+  <ellipse cx="250" cy="50" rx="15" ry="6" fill="white" opacity="0.25"/>
+  <!-- Birds -->
+  <path d="M255 35 Q258 32 261 35" stroke="#292524" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.08"/>
+  <path d="M260 30 Q263 27 266 30" stroke="#292524" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.06"/>
+</svg>

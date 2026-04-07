@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
+  <defs>
+    <linearGradient id="tabletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7cd4fd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a8e4ff" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f7ff"/>
+      <stop offset="100%" stop-color="#fefdfb"/>
+    </linearGradient>
+  </defs>
+  <!-- Soft background -->
+  <rect x="0" y="0" width="200" height="260" rx="20" fill="#7cd4fd" opacity="0.05"/>
+
+  <!-- Tablet device -->
+  <rect x="35" y="30" width="130" height="185" rx="14" fill="url(#tabletGrad)" stroke="#7cd4fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Screen -->
+  <rect x="45" y="42" width="110" height="155" rx="6" fill="url(#screenGrad)"/>
+
+  <!-- Storybook content on screen -->
+  <!-- Title area -->
+  <rect x="55" y="52" width="90" height="10" rx="3" fill="#7cd4fd" opacity="0.3"/>
+  <!-- Illustration area -->
+  <rect x="55" y="70" width="90" height="65" rx="6" fill="#bbf7d0" opacity="0.2"/>
+  <!-- Scene: tree and sun -->
+  <circle cx="120" cy="85" r="10" fill="#fef08a" opacity="0.5"/>
+  <path d="M80 130 L90 100 L100 130 Z" fill="#bbf7d0" opacity="0.6"/>
+  <path d="M88 130 L98 105 L108 130 Z" fill="#bbf7d0" opacity="0.4"/>
+  <rect x="92" y="125" width="4" height="10" rx="1" fill="#292524" opacity="0.1"/>
+  <!-- Small character -->
+  <circle cx="115" cy="118" r="6" fill="#f9a8d4" opacity="0.5"/>
+  <rect x="112" y="124" width="6" height="8" rx="2" fill="#f9a8d4" opacity="0.4"/>
+  <!-- Text lines -->
+  <rect x="55" y="145" width="80" height="4" rx="2" fill="#292524" opacity="0.08"/>
+  <rect x="55" y="155" width="70" height="4" rx="2" fill="#292524" opacity="0.08"/>
+  <rect x="55" y="165" width="75" height="4" rx="2" fill="#292524" opacity="0.08"/>
+  <rect x="55" y="175" width="50" height="4" rx="2" fill="#292524" opacity="0.08"/>
+
+  <!-- Phone beside tablet -->
+  <rect x="140" y="160" width="35" height="55" rx="6" fill="#7cd4fd" opacity="0.15" stroke="#7cd4fd" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="144" y="166" width="27" height="40" rx="3" fill="#fefdfb" opacity="0.8"/>
+  <!-- Mini book on phone -->
+  <rect x="148" y="172" width="19" height="14" rx="2" fill="#e9d5ff" opacity="0.3"/>
+  <rect x="148" y="190" width="16" height="2" rx="1" fill="#292524" opacity="0.06"/>
+  <rect x="148" y="195" width="14" height="2" rx="1" fill="#292524" opacity="0.06"/>
+
+  <!-- Sparkles -->
+  <g opacity="0.5">
+    <line x1="25" y1="45" x2="25" y2="51" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="22" y1="48" x2="28" y2="48" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <circle cx="175" cy="40" r="3" fill="#f9a8d4" opacity="0.3"/>
+
+  <!-- Label -->
+  <text x="100" y="248" text-anchor="middle" font-family="'Nunito', sans-serif" font-size="11" fill="#7cd4fd" opacity="0.6">Digital</text>
+</svg>

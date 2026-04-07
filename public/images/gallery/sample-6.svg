@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" fill="none">
+  <!-- Cloudland scene - Sky blue/Pink theme -->
+  <defs>
+    <linearGradient id="s6sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7cd4fd" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Book spread -->
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="#fefdfb"/>
+  <rect x="0" y="0" width="280" height="200" rx="10" fill="url(#s6sky)"/>
+  <line x1="140" y1="5" x2="140" y2="195" stroke="#7cd4fd" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Left page - Text -->
+  <rect x="15" y="30" width="100" height="6" rx="3" fill="#7cd4fd" opacity="0.4"/>
+  <rect x="15" y="50" width="108" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="62" width="100" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="74" width="110" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="86" width="95" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="98" width="105" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="110" width="90" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <rect x="15" y="122" width="100" height="4" rx="2" fill="#292524" opacity="0.07"/>
+  <!-- Cloud deco on text page -->
+  <ellipse cx="50" cy="160" rx="18" ry="7" fill="#7cd4fd" opacity="0.1"/>
+  <ellipse cx="42" cy="157" rx="10" ry="6" fill="#a8e4ff" opacity="0.08"/>
+
+  <!-- Right page - Cloudland illustration -->
+  <!-- Rainbow (faint arc) -->
+  <path d="M155 140 Q210 30 265 140" stroke="#f9a8d4" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.12"/>
+  <path d="M160 140 Q210 40 260 140" stroke="#fef08a" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.1"/>
+  <path d="M165 140 Q210 50 255 140" stroke="#bbf7d0" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.1"/>
+  <path d="M170 140 Q210 60 250 140" stroke="#7cd4fd" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.1"/>
+  <path d="M175 140 Q210 70 245 140" stroke="#e9d5ff" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.1"/>
+
+  <!-- Clouds -->
+  <g opacity="0.35">
+    <ellipse cx="185" cy="130" rx="28" ry="12" fill="#7cd4fd"/>
+    <ellipse cx="175" cy="125" rx="16" ry="10" fill="#a8e4ff"/>
+    <ellipse cx="195" cy="124" rx="14" ry="9" fill="white" opacity="0.5"/>
+  </g>
+  <g opacity="0.3">
+    <ellipse cx="240" cy="110" rx="22" ry="10" fill="#7cd4fd"/>
+    <ellipse cx="232" cy="106" rx="14" ry="8" fill="#a8e4ff"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse cx="210" cy="155" rx="30" ry="10" fill="#f9a8d4"/>
+    <ellipse cx="200" cy="150" rx="18" ry="8" fill="#f9a8d4" opacity="0.6"/>
+  </g>
+
+  <!-- Child floating with balloon cluster -->
+  <g opacity="0.5">
+    <!-- Child -->
+    <circle cx="210" cy="85" r="7" fill="#f9a8d4" opacity="0.6"/>
+    <path d="M204 92 Q204 102 210 102 Q216 102 216 92" fill="#7cd4fd" opacity="0.4"/>
+    <!-- Balloon strings -->
+    <line x1="208" y1="85" x2="200" y2="55" stroke="#292524" stroke-width="0.5" stroke-opacity="0.1" stroke-linecap="round"/>
+    <line x1="210" y1="82" x2="210" y2="50" stroke="#292524" stroke-width="0.5" stroke-opacity="0.1" stroke-linecap="round"/>
+    <line x1="212" y1="85" x2="220" y2="55" stroke="#292524" stroke-width="0.5" stroke-opacity="0.1" stroke-linecap="round"/>
+    <!-- Balloons -->
+    <ellipse cx="200" cy="48" rx="8" ry="10" fill="#f9a8d4" opacity="0.4"/>
+    <ellipse cx="210" cy="42" rx="8" ry="10" fill="#fef08a" opacity="0.4"/>
+    <ellipse cx="220" cy="48" rx="8" ry="10" fill="#bbf7d0" opacity="0.4"/>
+  </g>
+
+  <!-- Stars -->
+  <polygon points="170,35 171,38 174,38 172,40 173,43 170,41 167,43 168,40 166,38 169,38" fill="#fef08a" opacity="0.3"/>
+  <polygon points="250,70 251,73 254,73 252,75 253,78 250,76 247,78 248,75 246,73 249,73" fill="#fef08a" opacity="0.25"/>
+  <!-- Birds -->
+  <path d="M160 55 Q163 52 166 55" stroke="#292524" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.06"/>
+  <path d="M165 50 Q168 47 171 50" stroke="#292524" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.05"/>
+</svg>

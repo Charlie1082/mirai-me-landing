@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
+  <defs>
+    <linearGradient id="softGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7cd4fd" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <!-- Soft background -->
+  <rect x="0" y="0" width="200" height="260" rx="20" fill="#f9a8d4" opacity="0.05"/>
+
+  <!-- Book shadow -->
+  <ellipse cx="105" cy="220" rx="60" ry="8" fill="#292524" opacity="0.05"/>
+
+  <!-- Softcover book - angled view -->
+  <!-- Back page hints -->
+  <rect x="52" y="42" width="105" height="150" rx="4" fill="#e9d5ff" opacity="0.2" transform="rotate(2, 100, 120)"/>
+  <rect x="50" y="40" width="105" height="150" rx="4" fill="#7cd4fd" opacity="0.1" transform="rotate(1, 100, 120)"/>
+
+  <!-- Main book cover -->
+  <rect x="45" y="38" width="110" height="155" rx="6" fill="url(#softGrad)" stroke="#f9a8d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cover illustration area -->
+  <rect x="55" y="50" width="90" height="80" rx="8" fill="#fefdfb" opacity="0.6"/>
+
+  <!-- Cover scene: child with balloon -->
+  <!-- Sky -->
+  <rect x="55" y="50" width="90" height="45" rx="8" fill="#7cd4fd" opacity="0.1"/>
+  <!-- Clouds -->
+  <ellipse cx="80" cy="62" rx="15" ry="6" fill="white" opacity="0.5"/>
+  <ellipse cx="120" cy="68" rx="12" ry="5" fill="white" opacity="0.4"/>
+  <!-- Ground -->
+  <ellipse cx="100" cy="128" rx="45" ry="6" fill="#bbf7d0" opacity="0.3"/>
+  <!-- Child silhouette -->
+  <circle cx="95" cy="100" r="8" fill="#f9a8d4" opacity="0.5"/>
+  <path d="M89 108 Q88 118 88 125 Q92 128 98 128 Q102 125 102 118 Q101 108 101 108 Z" fill="#f9a8d4" opacity="0.4"/>
+  <!-- Balloon -->
+  <ellipse cx="108" cy="78" rx="10" ry="13" fill="#fef08a" opacity="0.5"/>
+  <line x1="108" y1="91" x2="100" y2="105" stroke="#292524" stroke-width="0.5" stroke-opacity="0.2" stroke-linecap="round"/>
+  <!-- Stars -->
+  <polygon points="130,58 131,61 134,61 132,63 133,66 130,64 127,66 128,63 126,61 129,61" fill="#fef08a" opacity="0.5"/>
+
+  <!-- Title area on cover -->
+  <rect x="60" y="140" width="80" height="6" rx="2" fill="#292524" opacity="0.12"/>
+  <rect x="70" y="152" width="60" height="4" rx="2" fill="#292524" opacity="0.08"/>
+  <!-- Small heart on cover -->
+  <path d="M60,168 Q60,164 64,164 Q68,164 68,170 L64,174 L60,170 Z" fill="#f9a8d4" opacity="0.3"/>
+
+  <!-- Book spine line -->
+  <line x1="48" y1="42" x2="48" y2="190" stroke="#f9a8d4" stroke-width="1" stroke-opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Decorations -->
+  <g opacity="0.5">
+    <line x1="170" y1="50" x2="170" y2="56" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="167" y1="53" x2="173" y2="53" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <circle cx="30" cy="100" r="3" fill="#bbf7d0" opacity="0.3"/>
+  <circle cx="175" cy="150" r="2.5" fill="#e9d5ff" opacity="0.3"/>
+
+  <!-- Label -->
+  <text x="100" y="248" text-anchor="middle" font-family="'Nunito', sans-serif" font-size="11" fill="#f9a8d4" opacity="0.6">Softcover</text>
+</svg>

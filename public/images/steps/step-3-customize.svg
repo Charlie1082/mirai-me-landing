@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="paletteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bbf7d0"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+  </defs>
+  <!-- Soft background circle -->
+  <circle cx="50" cy="50" r="45" fill="#bbf7d0" opacity="0.1"/>
+  <!-- Paint palette -->
+  <ellipse cx="48" cy="52" rx="28" ry="24" fill="url(#paletteGrad)" opacity="0.5" stroke="#bbf7d0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Palette hole -->
+  <ellipse cx="40" cy="58" rx="5" ry="4" fill="#fefdfb"/>
+  <!-- Paint dots on palette -->
+  <circle cx="36" cy="42" r="5" fill="#7cd4fd" opacity="0.7"/>
+  <circle cx="48" cy="38" r="5" fill="#f9a8d4" opacity="0.7"/>
+  <circle cx="60" cy="42" r="5" fill="#fef08a" opacity="0.8"/>
+  <circle cx="64" cy="54" r="4.5" fill="#e9d5ff" opacity="0.7"/>
+  <circle cx="56" cy="62" r="4" fill="#bbf7d0" opacity="0.7"/>
+  <!-- Paint brush -->
+  <g transform="rotate(-35, 70, 30)">
+    <rect x="66" y="15" width="6" height="30" rx="3" fill="#fef08a" stroke="#292524" stroke-width="0.5" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="64" y="42" width="10" height="14" rx="2" fill="#f9a8d4" opacity="0.8"/>
+    <path d="M65 56 Q69 62 73 56" fill="#f9a8d4" opacity="0.6"/>
+  </g>
+  <!-- Small sparkles -->
+  <g opacity="0.5">
+    <line x1="20" y1="28" x2="20" y2="34" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="17" y1="31" x2="23" y2="31" stroke="#fef08a" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <circle cx="78" cy="68" r="2.5" fill="#f9a8d4" opacity="0.3"/>
+</svg>
