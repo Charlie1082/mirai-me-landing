@@ -111,9 +111,10 @@ export async function POST(request: NextRequest) {
         { message: "registered" },
         { status: 201 }
       );
-    } catch {
+    } catch (err) {
+      console.error("Google Sheets error:", err);
       return NextResponse.json(
-        { message: "server_error" },
+        { message: "server_error", detail: String(err) },
         { status: 500 }
       );
     }
