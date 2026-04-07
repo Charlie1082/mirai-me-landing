@@ -59,6 +59,18 @@
 - **Cloudflare**: DNS 관리 (CDN/DDoS 방어/SSL)
 - **라이브 URL**: https://mirai-me.jp ✅
 
+### 8. 사전등록 → Google Sheets 연동 ✅
+- **GCP 프로젝트**: `mirai-me`
+- **서비스 계정**: `sheets-writer@mirai-me.iam.gserviceaccount.com`
+- **스프레드시트 ID**: `1kdZvzVfMSKsDPDMjF5OXF7lWFu2FtbCUqA-1Z37HtjA`
+- **Vercel 환경변수**: 3개 설정 완료 (GOOGLE_SHEETS_CLIENT_EMAIL, PRIVATE_KEY, SPREADSHEET_ID)
+- **수집 데이터**: email, locale, timestamp, source, country, city
+- **확인 방법**: mirai-me@miraime.net으로 Google Sheets 접속
+
+### 9. 모바일 언어 선택 수정 ✅
+- `localeDetection: false`로 항상 일본어 디폴트
+- LanguageSwitcher: 드롭다운 → 인라인 토글 버튼 (모바일 터치 호환)
+
 ---
 
 ## 프로젝트 폴더 구조
@@ -136,7 +148,7 @@ git push
 | 우선순위 | 항목 | 상태 |
 |----------|------|------|
 | 1 | 상표 출원 (일본 변리사, 제9/16/41류) | 미진행 |
-| 2 | Google Sheets API 연동 | 코드 완료, GCP 설정 필요 |
+| 2 | Google Sheets API 연동 | ✅ 완료 |
 | 3 | AI 파이프라인 프로토타입 (사진→캐릭터→PDF) | 미진행 |
 | 4 | Gelato/Mixam API 테스트 + 샘플 발주 | 미진행 |
 | 5 | 일러스트 고도화 (실제 동화책 느낌 비주얼) | 미진행 |
@@ -162,3 +174,5 @@ git push
 | Vercel | 웹 호스팅 (자동 배포) | vercel.com |
 | Cloudflare | DNS + CDN + 보안 | dash.cloudflare.com |
 | JP-Domains | mirai-me.jp 도메인 등록 | jp-domains.com (또는 등록한 레지스트라) |
+| GCP | Google Sheets API 서비스 계정 | console.cloud.google.com (프로젝트: mirai-me) |
+| Google Workspace | 기업 이메일 mirai-me@miraime.net | workspace.google.com |

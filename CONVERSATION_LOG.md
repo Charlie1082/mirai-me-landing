@@ -191,9 +191,65 @@ MIRAI-ME 선택 이유:
 
 ---
 
-## 맥북에서 이 대화를 이어가려면
+---
+
+### Phase 8: 맥북 세션 — 모바일 수정 + 사전등록 API 연동 (2026-04-07)
+
+**환경**: macOS, Claude Code (맥북)
+
+#### 1. 모바일 언어 선택 수정
+- **문제**: 스마트폰에서 언어 선택 불가 + 디폴트가 한국어
+- **원인 1**: `next-intl` 미들웨어가 브라우저 `Accept-Language` 헤더로 자동 감지 → 한국어 브라우저면 `/ko`로 리다이렉트
+- **원인 2**: LanguageSwitcher가 드롭다운 방식 → `mousedown` 이벤트가 모바일 터치에서 미작동 + `overflow-hidden`에 가려짐
+- **수정**:
+  - `src/i18n/routing.ts`: `localeDetection: false` 추가
+  - `src/components/layout/LanguageSwitcher.tsx`: 드롭다운 → `[日本語 | 한국어]` 인라인 토글 버튼으로 변경
+
+#### 2. 사전등록 이메일 → Google Sheets 연동
+- **문제**: Vercel 서버리스 환경에서 JSON 파일 쓰기 불가 → 등록 실패
+- **해결**: Google Sheets API 연동
+  - GCP 프로젝트 `mirai-me` 생성
+  - 서비스 계정: `sheets-writer@mirai-me.iam.gserviceaccount.com`
+  - Google Sheets API 활성화
+  - Vercel 환경변수 3개 설정 (CLI로)
+  - **트러블슈팅**: `echo`의 trailing newline 때문에 인증 실패 → `printf '%s'`로 해결
+- **스프레드시트 ID**: `1kdZvzVfMSKsDPDMjF5OXF7lWFu2FtbCUqA-1Z37HtjA`
+
+#### 3. 사전등록 폼 locale 전송 수정
+- **문제**: 폼에서 `locale` 값을 API에 미전송 → `unknown`으로 기록
+- **수정**: `PreRegisterSection.tsx`에서 `useLocale()` 추가, JSON body에 locale 포함
+
+#### 4. 국가/도시 정보 추가
+- Vercel 자동 제공 헤더 활용: `x-vercel-ip-country`, `x-vercel-ip-city`
+- 스프레드시트 컬럼 확장: email, locale, timestamp, source, **country**, **city**
+
+#### 5. 환경 설정 (맥북)
+- Node.js v24.14.1 (`/usr/local/bin/node`)
+- Vercel CLI v50.40.0 설치 + 로그인 (charile1082)
+- 프로젝트 링크: `vercel link` 완료
+- `.claude/launch.json` 설정
+
+#### 커밋 히스토리 (이번 세션)
+```
+dcdc590 feat: add country and city columns from Vercel geo headers
+fb79431 fix: send locale with pre-register form submission
+ff364b9 chore: remove debug error logging from pre-register API
+a1f3b10 debug: add error logging to pre-register API
+333cda0 fix: 모바일 언어 선택 불가 및 디폴트 한국어 문제 수정
+```
+
+---
+
+## 윈도우에서 이 대화를 이어가려면
 
 Claude Code에서:
 ```
 "PROJECT_SUMMARY.md와 CONVERSATION_LOG.md를 읽고 프로젝트 전체 맥락을 파악해줘. 이어서 작업할 거야."
+```
+
+Git 최신 코드 받기:
+```bash
+cd E:/MIRAI-ME/03_개발/landing
+git pull
+npm install
 ```
