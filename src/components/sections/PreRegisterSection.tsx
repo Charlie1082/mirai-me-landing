@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,6 +19,7 @@ type FormState = "idle" | "loading" | "success" | "error";
 
 export default function PreRegisterSection() {
   const t = useTranslations("preRegister");
+  const locale = useLocale();
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -38,7 +39,7 @@ export default function PreRegisterSection() {
       const res = await fetch("/api/pre-register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: data.email }),
+        body: JSON.stringify({ email: data.email, locale }),
       });
 
       const result = await res.json();
