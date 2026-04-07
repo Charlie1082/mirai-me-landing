@@ -1,6 +1,13 @@
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import { notoSansJP, notoSansKR, mPlusRounded } from "@/styles/fonts";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.svg",
+  },
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

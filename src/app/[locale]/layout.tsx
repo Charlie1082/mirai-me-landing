@@ -29,11 +29,21 @@ export async function generateMetadata({
       locale: locale === "ja" ? "ja_JP" : "ko_KR",
       type: "website",
       siteName: "MIRAI-ME",
+      url: locale === "ja" ? "https://mirai-me.jp" : "https://mirai-me.jp/ko",
+      images: [
+        {
+          url: "https://mirai-me.jp/images/og-image.svg",
+          width: 1200,
+          height: 630,
+          alt: "MIRAI-ME — AIがつくる、世界にひとつの絵本",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
+      images: ["https://mirai-me.jp/images/og-image.svg"],
     },
     alternates: {
       languages: {
