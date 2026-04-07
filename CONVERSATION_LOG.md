@@ -1,0 +1,199 @@
+# MIRAI-ME 프로젝트 대화 로그
+> 날짜: 2026-04-07
+> 환경: Windows, Claude Code
+> 이 파일은 대화 내용을 다른 기기에서 참고하기 위한 기록입니다.
+
+---
+
+## 대화 흐름 요약
+
+### Phase 1: Gemini 대화 검토 & 팩트체크
+
+**시작점**: 사용자가 Gemini와 나눈 대화(AI 맞춤형 동화책 사업 아이디어)를 검토 요청.
+
+**팩트체크 결과 요약**:
+
+#### 한국 서비스
+| 서비스 | 실존 | 정확도 |
+|--------|------|--------|
+| 꿈틀꿈틀(Wriggle) | O | 중간 — 서비스 존재하나 URL, 앱이름, 유사도95% 미확인 |
+| 스톨라(Stoala) | O | 높음 — SNOW 계열사, 핵심 설명 일치 |
+| 포토몬(Photomon) | O | 낮음 — AI 개인화 아닌 포토북 서비스 |
+| 퍼블로그/스마일캣 | 각각 O | 낮음 — 별개 회사를 하나로 묶음 |
+| B tv 살아있는 동화 | O | 높음 — 핵심 설명 정확 |
+| 브레인팟(Brainpod) | **X** | **할루시네이션 가능성 높음** |
+
+#### 일본 서비스
+| 서비스 | 실존 | 정확도 |
+|--------|------|--------|
+| KidTeller | O | 낮음 — 일본 서비스가 아닌 글로벌 서비스 |
+| むげん絵本 | O | 중상 — BuzzFunc 개발, 3.0 업데이트 확인 |
+| はじまりはじまり | O | 중상 — 앱 아닌 웹서비스 |
+| coemo | O | 높음 — 타카라토미 12,980엔, 가장 정확 |
+
+#### 시장 데이터
+- 일본 아동서 시장: 실제 941억 엔 (Gemini의 800~900억엔은 대체로 맞음)
+- 디지털 성장률 10%: 과장 (실제 3~6%)
+- 식스 포켓, 마고카츠: 사실
+- 구리와 구라/논탄 롱셀러: 사실
+
+#### 인프라 — 가장 심각한 오류
+- ImageMagic: 동화책 인쇄 부적합 (어패럴/굿즈 위주)
+- 후지필름 API: 미국 기반, 일본 이용 불확실
+- **하드커버 1부 POD 비용**: Gemini 2,500엔 vs 실제 14,000엔+ (5~6배 차이!)
+
+---
+
+### Phase 2: 제작단가 절감 방안
+
+**핵심 결론**:
+1. 하드커버 → 소프트커버 전환 (60~80% 절감, 가장 큰 임팩트)
+2. Gelato/Mixam 일본 현지 POD 활용 (SC 기준 1,500~2,500엔)
+3. 소형 정방형(178mm) + 24p + 매트코트지
+4. 디지털 퍼스트 하이브리드 (PDF → SC → HC 3단계)
+
+**수정된 원가 (소프트커버 기준)**:
+- AI 이미지 ~300엔 + 인쇄 ~1,500~2,500엔 + 3PL ~300엔 + 배송 ~500~700엔 + 수수료 ~200엔
+- **합계: ~2,800~4,000엔** → 판매가 5,900엔 → 마진 40~55%
+
+**글로벌 POD 가격 비교**:
+| 서비스 | HC 1부 | SC 1부 | 일본 현지 인쇄 | API |
+|--------|--------|--------|--------------|-----|
+| Gelato | $12~20 | $7~12 | O | O |
+| Peecho | ~€5.20+ | ~€4+ | X | O |
+| Lulu | ~$14~28 | ~$2.35+ | X | O |
+| Mixam | 견적필요 | 견적필요 | O (mixam.jp) | O |
+| Blurb | $32~50 | $12~17 | X | 제한적 |
+
+---
+
+### Phase 3: 브랜드 네이밍
+
+**MIMO vs MIRAI-ME 비교 후 MIRAI-ME 선택**
+
+MIMO 기각 이유:
+- 제16류(서적) 상표 충돌 (등록번호 5174354)
+- 제9류(앱/전자출판물) 충돌 (등록번호 6144920)
+- mimo.app을 Mimo 코딩 플랫폼(2,500만 유저)이 사용 중
+- 주요 도메인(.com, .jp, .app, .io) 전부 선점
+
+MIRAI-ME 선택 이유:
+- J-PlatPat 상표 충돌 0건
+- mirai-me.jp, mirai-me.app 등 도메인 확보 가능
+- "미래의 나" 의미가 동화책 서비스와 완벽 매칭
+
+**서브 브랜드 확장**:
+- Kids (아이 동화책): "未来のわたしに会いに行こう"
+- Story (프로포즈/커플): "ふたりの未来を、一冊に"
+- Memory (시니어 회고록): "あの日の私に届ける物語"
+- Paw (반려동물)
+
+---
+
+### Phase 4: 도메인 확보
+
+- **mirai-me.jp**: ✅ 확보 완료
+- 등록 방법: JP-Domains.com 추천 (영어 인터페이스, 해외 카드 가능, 로컬 프레즌스 무료, $35~49/년)
+- Onamae.com은 해외 카드 불가 + 일본어 전용이라 비추천
+
+**도메인 현황**:
+| 도메인 | 상태 |
+|--------|------|
+| mirai-me.jp | ✅ 확보 완료 |
+| mirai-me.app | 미등록 (~$13/년, 추후 확보) |
+| mirai-me.com | 2026-03-28 선점됨 (후쿠오카, 사이트 미구축) |
+| miraime.com | 파킹 상태 (Porkbun) |
+
+---
+
+### Phase 5: 기획 PPT 생성
+
+- 파일: `E:/MIRAI-ME/01_기획/MIRAI-ME_사업기획초안.pptx`
+- 11슬라이드: 타이틀, 사업개요, 시장분석, 제품라인업, 비즈니스프로세스, 제작단가, 기술스택, 마케팅전략, 법무/도메인, 로드맵, 확장비전
+- pptxgenjs + react-icons로 생성, 파스텔 동화풍 디자인
+
+---
+
+### Phase 6: 랜딩 페이지 개발
+
+**기술 스택**:
+- Next.js 16 (App Router) + TypeScript
+- Tailwind CSS v4 (커스텀 파스텔 팔레트)
+- next-intl v4 (ja 기본 + ko)
+- framer-motion v12 (스크롤 애니메이션)
+- react-hook-form + zod (폼 검증)
+- lucide-react (아이콘)
+- googleapis (Google Sheets 연동 준비)
+
+**i18n 구조**:
+- 기본 로케일: ja (URL 접두사 없음)
+- 한국어: /ko 접두사
+- 메시지 파일: src/messages/ja.json, ko.json
+
+**8개 섹션**:
+1. Hero — 태그라인 + CTA + 파스텔 장식 + 히어로 비주얼 SVG
+2. About — 3개 특징 카드 (AI주인공, 스토리, 추억)
+3. HowItWorks — 4단계 (사진→AI→커스텀→배송) + 스텝 SVG 아이콘
+4. Products — 3 티어 (디지털/SC/HC) + 제품 SVG + Coming Soon
+5. Gallery — 6개 샘플 SVG 캐러셀
+6. PreRegister — 이메일 폼 (react-hook-form + zod)
+7. FAQ — 아코디언 6개 항목
+8. Footer — 다크 푸터 + 링크 + SNS
+
+**이메일 수집 API**:
+- POST /api/pre-register
+- Google Sheets 환경변수 있으면 → Sheets API 사용
+- 없으면 → data/registrations.json 파일 저장 (폴백)
+- Rate limiting: IP당 분당 3회
+
+**SVG 에셋 18개**:
+- logo.svg, hero-visual.svg
+- steps/step-1~4.svg
+- products/digital.svg, softcover.svg, hardcover.svg
+- decorations/cloud-1.svg, star.svg, flower.svg
+- gallery/sample-1~6.svg (숲, 바다, 별나라, 성, 동물, 구름나라)
+- og-image.svg, favicon.svg
+
+**빌드 중 수정한 이슈들**:
+- lucide-react에서 Instagram, Twitter 아이콘 삭제됨 → ExternalLink, Globe, Mail로 대체
+- Header에서 Button의 asChild prop 없음 → 인라인 a 태그로 교체
+- Root layout에 html/body 필요 (Next.js 16) → 구조 조정
+- Root / 경로 404 → page.tsx에 redirect("/ja") 추가
+
+---
+
+### Phase 7: 배포
+
+**순서**:
+1. GitHub 리포 생성: github.com/Charile1082/mirai-me-landing (Public)
+   - (참고: GitHub이 자동으로 Charlie1082로 리다이렉트)
+2. git push 완료
+3. Vercel Import + Deploy 성공 ("Congratulations!" 화면 확인)
+4. Cloudflare DNS 설정:
+   - A 레코드: @ → 76.76.21.21 (Proxied)
+   - CNAME: www → cname.vercel-dns.com (Proxied)
+   - SSL: Full (strict)
+5. Vercel Domains에 mirai-me.jp 추가 → "Proxy Detected" ✅
+6. **https://mirai-me.jp 접속 성공!**
+
+---
+
+### 주요 결정사항 기록
+
+1. 타겟 시장: 일본 (한국 아님)
+2. 브랜드: MIRAI-ME (MIMO 기각)
+3. 디자인 톤: 파스텔 동화풍 + 일본 일러스트 느낌
+4. 사이트 언어: 일본어 + 한국어 동시
+5. 첫 제품: 랜딩 페이지 (소개 + 사전예약)
+6. 인쇄 파트너: Gelato(일본 현지) / Mixam Japan
+7. 3PL: OpenLogi
+8. 배포: Vercel + Cloudflare DNS
+
+---
+
+## 맥북에서 이 대화를 이어가려면
+
+Claude Code에서:
+```
+"PROJECT_SUMMARY.md와 CONVERSATION_LOG.md를 읽고 프로젝트 전체 맥락을 파악해줘. 이어서 작업할 거야."
+```
