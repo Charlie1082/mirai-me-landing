@@ -240,16 +240,69 @@ a1f3b10 debug: add error logging to pre-register API
 
 ---
 
-## 윈도우에서 이 대화를 이어가려면
+### Phase 9: 윈도우 세션 — 환경 세팅 + 정리 + OG 연결 (2026-04-07)
 
-Claude Code에서:
+**환경**: Windows, Claude Desktop (MCP)
+**마지막 작업 플랫폼**: `[Windows]` 🖥️
+
+#### 1. 맥북 최신 코드 동기화
+- `git pull`로 Phase 8 (맥북) 커밋 5건 수신 완료
+- LanguageSwitcher, Google Sheets 연동, locale 전송, country/city 추가 등 반영
+
+#### 2. 윈도우 Vercel CLI 환경 세팅
+- **Vercel CLI v50.40.0 설치** (`npm install -g vercel`)
+- 한글 Windows 사용자명 문제 → 토큰 방식으로 인증 해결
+- `vercel link --project mirai-me-landing` 완료
+- 환경변수 3개 (Google Sheets) 확인됨
+- 불필요한 중복 프로젝트 `landing` 발견 (Vercel 웹에서 삭제 필요)
+
+#### 3. 프로젝트 정리 (불필요 파일 삭제)
+삭제한 파일:
+- `public/next.svg`, `vercel.svg`, `file.svg`, `globe.svg`, `window.svg` (create-next-app 기본)
+- `src/app/favicon.ico` (favicon.svg와 중복, 25KB 절약)
+- `data/` 빈 폴더 (Google Sheets로 전환 완료)
+- `E:/MIRAI-ME/._*.md` (macOS 메타데이터 잔여)
+- `E:/MIRAI-ME/` 루트의 중복 md 파일 2개 (Git 리포 내 파일만 유지)
+
+보류한 파일 (향후 활용 가능):
+- `public/images/logo.svg` — 로고 이미지 교체 시 사용
+- `public/images/decorations/` 3개 — 디자인 개선 시 사용
+- `src/components/ui/Card.tsx` — 향후 확장 시 사용
+
+#### 4. OG 이미지 메타데이터 연결
+- `src/app/[locale]/layout.tsx`: OpenGraph `images` + Twitter `images` 추가
+- SNS 공유 시 `og-image.svg` (MIRAI-ME 로고 + 동화책 일러스트) 표시됨
+
+#### 5. favicon SVG 통일
+- `src/app/layout.tsx`: `metadata.icons.icon` → `/favicon.svg` 연결
+- 중복 `favicon.ico` 삭제
+
+#### 커밋 히스토리 (이번 세션)
+```
+acba665 chore: cleanup unused files + connect OG image + favicon svg
+```
+
+---
+
+## 🏷️ 마지막 작업 플랫폼: `[Windows]` 🖥️
+> 다음 작업 시 반드시 `git pull` 먼저 실행할 것
+
+---
+
+## 다른 기기에서 이 대화를 이어가려면
+
+Claude Code / Claude Desktop에서:
 ```
 "PROJECT_SUMMARY.md와 CONVERSATION_LOG.md를 읽고 프로젝트 전체 맥락을 파악해줘. 이어서 작업할 거야."
 ```
 
 Git 최신 코드 받기:
 ```bash
+# Windows
 cd E:/MIRAI-ME/03_개발/landing
 git pull
-npm install
+
+# macOS
+cd ~/Desktop/mirai-me-landing
+git pull
 ```

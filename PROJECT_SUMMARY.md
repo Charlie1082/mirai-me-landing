@@ -176,3 +176,17 @@ git push
 | JP-Domains | mirai-me.jp 도메인 등록 | jp-domains.com (또는 등록한 레지스트라) |
 | GCP | Google Sheets API 서비스 계정 | console.cloud.google.com (프로젝트: mirai-me) |
 | Google Workspace | 기업 이메일 mirai-me@miraime.net | workspace.google.com |
+
+---
+
+## 🏷️ 마지막 작업 플랫폼: `[Windows]` 🖥️
+> 업데이트: 2026-04-07
+> 다음 작업 시 반드시 `git pull` 먼저 실행
+
+### 10. 프로젝트 정리 ✅ (Phase 9 — Windows)
+- create-next-app 기본 SVG 5개 삭제
+- favicon.ico 삭제 → favicon.svg 통일
+- OG 이미지 metadata 연결 (OpenGraph + Twitter)
+- macOS 메타데이터 잔여 파일 삭제
+- 루트 중복 md 파일 삭제 (Git 리포 내 파일만 유지)
+- Vercel CLI 윈도우 세팅 완료 (토큰 인증)
