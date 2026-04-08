@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { ExternalLink, Globe, Mail } from "lucide-react";
 
@@ -26,17 +27,17 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <a href="#about" className="text-sm text-warm-300 hover:text-white transition-colors">
-                  MIRAI-ME
+                  {t("aboutLink")}
                 </a>
               </li>
               <li>
                 <a href="#how-it-works" className="text-sm text-warm-300 hover:text-white transition-colors">
-                  {t("service")}
+                  {t("howItWorksLink")}
                 </a>
               </li>
               <li>
-                <a href="#products" className="text-sm text-warm-300 hover:text-white transition-colors">
-                  FAQ
+                <a href="#faq" className="text-sm text-warm-300 hover:text-white transition-colors">
+                  {t("faqLink")}
                 </a>
               </li>
             </ul>
@@ -48,19 +49,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               <li>
-                <a href="/terms" className="text-sm text-warm-300 hover:text-white transition-colors">
+                <Link href="/terms" className="text-sm text-warm-300 hover:text-white transition-colors">
                   {t("terms")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy" className="text-sm text-warm-300 hover:text-white transition-colors">
+                <Link href="/privacy" className="text-sm text-warm-300 hover:text-white transition-colors">
                   {t("privacy")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/legal" className="text-sm text-warm-300 hover:text-white transition-colors">
+                <Link href="/legal" className="text-sm text-warm-300 hover:text-white transition-colors">
                   {t("tokushoho")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,7 +81,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://mirai-me.jp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-warm-800 text-warm-300 transition-colors hover:bg-primary-500 hover:text-white"
@@ -89,7 +90,7 @@ export default function Footer() {
                 <Globe className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://mirai-me.jp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-warm-800 text-warm-300 transition-colors hover:bg-secondary-400 hover:text-white"

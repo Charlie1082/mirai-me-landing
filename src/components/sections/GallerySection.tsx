@@ -63,7 +63,7 @@ export default function GallerySection() {
               >
                 <Image
                   src={`/images/gallery/sample-${i + 1}.svg`}
-                  alt={`Sample ${i + 1}`}
+                  alt={t("sampleAlt", { index: i + 1 })}
                   width={280}
                   height={200}
                   className="w-full h-full object-cover"
@@ -79,7 +79,7 @@ export default function GallerySection() {
             <button
               key={i}
               onClick={() => scrollToIndex(i)}
-              aria-label={`Go to sample ${i + 1}`}
+              aria-label={t("goToSample", { index: i + 1 })}
               className={`h-2.5 rounded-full transition-all ${
                 activeIndex === i
                   ? "w-6 bg-primary-400"

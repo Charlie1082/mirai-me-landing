@@ -60,6 +60,7 @@
   },
   "products": {
     "heading": "選べる3つのプラン",
+    "recommended": "おすすめ",
     "comingSoon": "価格は近日発表",
     "tiers": [
       {
@@ -94,7 +95,9 @@
   },
   "gallery": {
     "heading": "サンプルギャラリー",
-    "subtitle": "AIが生成した絵本のイメージをご覧ください"
+    "subtitle": "AIが生成した絵本のイメージをご覧ください",
+    "sampleAlt": "AI生成絵本サンプル {index}",
+    "goToSample": "サンプル {index} を表示"
   },
   "preRegister": {
     "heading": "リリース時にお知らせします",
@@ -138,6 +141,9 @@
   "footer": {
     "tagline": "AIがつくる、世界にひとつの絵本",
     "service": "サービス",
+    "aboutLink": "MIRAI-MEとは",
+    "howItWorksLink": "つくり方",
+    "faqLink": "よくある質問",
     "legal": "法的情報",
     "followUs": "フォローする",
     "copyright": "© 2026 MIRAI-ME. All rights reserved.",

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import Button from "@/components/ui/Button";
+import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const navKeys = [
@@ -47,9 +47,9 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
-        <a href="#" className="font-display text-xl font-bold text-primary-500">
+        <Link href="/" className="font-display text-xl font-bold text-primary-500">
           MIRAI-ME
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
           {navKeys.map((key) => (
@@ -105,9 +105,13 @@ export default function Header() {
               ))}
               <div className="mt-3 flex items-center gap-3 px-4">
                 <LanguageSwitcher />
-                <Button size="sm" className="flex-1" onClick={closeMobile}>
-                  <a href="#pre-register">{t("preRegister")}</a>
-                </Button>
+                <a
+                  href="#pre-register"
+                  onClick={closeMobile}
+                  className="flex-1 inline-flex items-center justify-center rounded-full bg-primary-300 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-primary-400"
+                >
+                  {t("cta")}
+                </a>
               </div>
             </div>
           </motion.nav>

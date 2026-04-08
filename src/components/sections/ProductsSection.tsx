@@ -40,12 +40,12 @@ export default function ProductsSection() {
               >
                 {tier.recommended && (
                   <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-primary-400 px-4 py-1 text-sm font-bold text-white">
-                    おすすめ
+                    {t("recommended")}
                   </span>
                 )}
 
                 <div className="mb-4 flex justify-center">
-                  <Image src={productImages[i]} alt="" width={120} height={156} />
+                  <Image src={productImages[i]} alt={t(tier.nameKey)} width={120} height={156} />
                 </div>
 
                 <h3 className="font-display text-2xl font-bold text-warm-800">

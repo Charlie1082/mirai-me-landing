@@ -60,6 +60,7 @@
   },
   "products": {
     "heading": "3가지 요금제",
+    "recommended": "추천",
     "comingSoon": "가격은 곧 공개됩니다",
     "tiers": [
       {
@@ -94,7 +95,9 @@
   },
   "gallery": {
     "heading": "샘플 갤러리",
-    "subtitle": "AI가 생성한 동화책 이미지를 확인하세요"
+    "subtitle": "AI가 생성한 동화책 이미지를 확인하세요",
+    "sampleAlt": "AI 생성 동화책 샘플 {index}",
+    "goToSample": "샘플 {index} 보기"
   },
   "preRegister": {
     "heading": "출시 시 알려드립니다",
@@ -138,6 +141,9 @@
   "footer": {
     "tagline": "AI가 만드는, 세상에 하나뿐인 동화책",
     "service": "서비스",
+    "aboutLink": "MIRAI-ME란?",
+    "howItWorksLink": "만드는 방법",
+    "faqLink": "자주 묻는 질문",
     "legal": "법적 정보",
     "followUs": "팔로우",
     "copyright": "© 2026 MIRAI-ME. All rights reserved.",

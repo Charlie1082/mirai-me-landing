@@ -78,6 +78,8 @@ export default function PreRegisterSection() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
+                  role="status"
+                  aria-live="polite"
                   className="flex flex-col items-center gap-4 rounded-2xl bg-white p-8 text-center shadow-sm"
                 >
                   <CheckCircle2 className="h-12 w-12 text-mint-400" />
@@ -95,7 +97,11 @@ export default function PreRegisterSection() {
                   className="flex flex-col gap-4 sm:flex-row"
                 >
                   <div className="flex flex-1 flex-col">
+                    <label htmlFor="pre-register-email" className="sr-only">
+                      {t("placeholder")}
+                    </label>
                     <input
+                      id="pre-register-email"
                       type="email"
                       placeholder={t("placeholder")}
                       {...register("email")}
@@ -129,6 +135,8 @@ export default function PreRegisterSection() {
                   initial={{ opacity: 0, y: -8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
+                  role="alert"
+                  aria-live="assertive"
                   className="mt-4 flex items-center gap-2 rounded-xl bg-red-50 p-3 text-sm text-red-600"
                 >
                   <AlertCircle className="h-4 w-4 shrink-0" />

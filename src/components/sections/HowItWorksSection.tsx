@@ -17,12 +17,6 @@ const gradients = [
   "from-accent-100 to-accent-200",
   "from-mint-100 to-mint-200",
 ];
-const iconColors = [
-  "text-primary-500",
-  "text-secondary-400",
-  "text-accent-300",
-  "text-mint-400",
-];
 
 export default function HowItWorksSection() {
   const t = useTranslations("howItWorks");
@@ -55,7 +49,7 @@ export default function HowItWorksSection() {
                 <div
                   className={`relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br ${gradients[i]} shadow-sm`}
                 >
-                  <Image src={stepImages[i]} alt="" width={36} height={36} />
+                  <Image src={stepImages[i]} alt={t(step.titleKey)} width={36} height={36} />
                 </div>
                 <span className="mt-3 flex h-7 w-7 items-center justify-center rounded-full bg-warm-100 text-xs font-bold text-warm-600">
                   {i + 1}
