@@ -43,7 +43,7 @@
 - mirai-me.com → 2026-03-28 선점됨 (매입 타진 가능)
 
 ### 5. 사업 기획 PPT
-- 11슬라이드 기획안: `E:/MIRAI-ME/01_기획/MIRAI-ME_사업기획초안.pptx`
+- 11슬라이드 기획안: `/Users/charlie/Workshop/MIRAI-ME/01_기획/MIRAI-ME_사업기획초안.pptx`
 
 ### 6. 랜딩 페이지 개발 & 배포
 - **기술 스택**: Next.js 16 + TypeScript + Tailwind CSS + next-intl + framer-motion
@@ -76,7 +76,7 @@
 ## 프로젝트 폴더 구조
 
 ```
-E:/MIRAI-ME/
+/Users/charlie/Workshop/MIRAI-ME/
 ├── 01_기획/
 │   └── MIRAI-ME_사업기획초안.pptx
 ├── 02_디자인/

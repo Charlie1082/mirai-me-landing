@@ -108,7 +108,7 @@ MIRAI-ME 선택 이유:
 
 ### Phase 5: 기획 PPT 생성
 
-- 파일: `E:/MIRAI-ME/01_기획/MIRAI-ME_사업기획초안.pptx`
+- 파일: `/Users/charlie/Workshop/MIRAI-ME/01_기획/MIRAI-ME_사업기획초안.pptx`
 - 11슬라이드: 타이틀, 사업개요, 시장분석, 제품라인업, 비즈니스프로세스, 제작단가, 기술스택, 마케팅전략, 법무/도메인, 로드맵, 확장비전
 - pptxgenjs + react-icons로 생성, 파스텔 동화풍 디자인
 
@@ -261,8 +261,8 @@ a1f3b10 debug: add error logging to pre-register API
 - `public/next.svg`, `vercel.svg`, `file.svg`, `globe.svg`, `window.svg` (create-next-app 기본)
 - `src/app/favicon.ico` (favicon.svg와 중복, 25KB 절약)
 - `data/` 빈 폴더 (Google Sheets로 전환 완료)
-- `E:/MIRAI-ME/._*.md` (macOS 메타데이터 잔여)
-- `E:/MIRAI-ME/` 루트의 중복 md 파일 2개 (Git 리포 내 파일만 유지)
+- `/Users/charlie/Workshop/MIRAI-ME/._*.md` (macOS 메타데이터 잔여)
+- `/Users/charlie/Workshop/MIRAI-ME/` 루트의 중복 md 파일 2개 (Git 리포 내 파일만 유지)
 
 보류한 파일 (향후 활용 가능):
 - `public/images/logo.svg` — 로고 이미지 교체 시 사용
@@ -294,11 +294,11 @@ acba665 chore: cleanup unused files + connect OG image + favicon svg
 
 #### 2. 프로젝트 폴더 정리
 - `E:/mirai-me-landing/` 중복 폴더 삭제 (수동)
-- `E:/MIRAI-ME/` 단일 폴더로 통합 확정
+- `/Users/charlie/Workshop/MIRAI-ME/` 단일 폴더로 통합 확정
 - CLAUDE.md에 폴더 강제 룰 적용
 
 #### 3. AI 조직 구조 수립
-- **문서**: `E:/MIRAI-ME/AI_ORGANIZATION.md`
+- **문서**: `/Users/charlie/Workshop/MIRAI-ME/AI_ORGANIZATION.md`
 - 총괄: Claude / 디자인+마케팅+재무: Gemini / 보조: OpenAI, Groq
 - 절대 규칙: 단독 모델 출력 금지, 부서당 최소 2모델 협업
 - 5단계 업무 프로세스: 지시→부서작업→총괄검증→합동리뷰→오너승인
@@ -319,14 +319,14 @@ acba665 chore: cleanup unused files + connect OG image + favicon svg
 - 우선순위: 캐릭터 변환 → PDF 프로토타입 → 풀 사이클
 
 #### 6. 제본/페이지 규격 확정
-- **문서**: `E:/MIRAI-ME/01_기획/絵本_製本規格ガイド.md`
+- **문서**: `/Users/charlie/Workshop/MIRAI-ME/01_기획/絵本_製本規格ガイド.md`
 - 론칭 사이즈: 203x203mm (8x8") 정방형 단일
 - 확장 사이즈: 128x182mm (B6 만화책 사이즈) — Story/Memory 라인용
 - 24p (SC) / 32p (HC), 8의 배수 원칙
 - SC: 무선철/PUR, HC: 실 제본 (糸かがり)
 
 #### 7. 디자인 엔진 기술 리포트
-- **문서**: `E:/MIRAI-ME/01_기획/デザインエンジン_技術レポート.md`
+- **문서**: `/Users/charlie/Workshop/MIRAI-ME/01_기획/デザインエンジン_技術レポート.md`
 - 5개 엔진 모듈 설계:
   1. 캐릭터 팩토리 (사진→레퍼런스 시트)
   2. 씬 컴포저 (24페이지 일러스트 생성)
@@ -343,10 +343,10 @@ acba665 chore: cleanup unused files + connect OG image + favicon svg
 
 #### 생성된 기획 문서
 ```
-E:/MIRAI-ME/AI_ORGANIZATION.md            — AI 조직 운영 규칙
-E:/MIRAI-ME/01_기획/絵本_製本規格ガイド.md    — 제본/페이지 규격
-E:/MIRAI-ME/01_기획/デザインエンジン_技術レポート.md — 엔진 기술 리포트
-E:/MIRAI-ME/01_기획/MVP_빌드계획.md         — MVP 빌드 계획
+/Users/charlie/Workshop/MIRAI-ME/AI_ORGANIZATION.md            — AI 조직 운영 규칙
+/Users/charlie/Workshop/MIRAI-ME/01_기획/絵本_製本規格ガイド.md    — 제본/페이지 규격
+/Users/charlie/Workshop/MIRAI-ME/01_기획/デザインエンジン_技術レポート.md — 엔진 기술 리포트
+/Users/charlie/Workshop/MIRAI-ME/01_기획/MVP_빌드계획.md         — MVP 빌드 계획
 ```
 
 ---
@@ -367,7 +367,7 @@ Claude Code / Claude Desktop에서:
 Git 최신 코드 받기:
 ```bash
 # Windows
-cd E:/MIRAI-ME/03_개발/landing
+cd /Users/charlie/Workshop/MIRAI-ME/03_개발/landing
 git pull
 
 # macOS
