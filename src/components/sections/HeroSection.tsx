@@ -139,9 +139,9 @@ export default function HeroSection() {
             <Image
               src="/hero_banner.png?v=g2"
               alt="MIRAI-ME"
-              width={1152}
-              height={920}
-              className="hidden w-full max-w-[45rem] bg-transparent md:block"
+              width={1155}
+              height={1185}
+              className="hidden w-full max-w-[27rem] bg-transparent md:block"
               style={{ isolation: "isolate" }}
               priority
               unoptimized
