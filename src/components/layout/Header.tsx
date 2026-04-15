@@ -49,11 +49,11 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
         <Link href="/" className="flex items-center" aria-label="MIRAI-ME">
-          {/* 컬러풀 MIRAI-ME 워드마크 (E 키아트에서 추출, mix-blend-multiply로 페이지에 자연 융합) */}
+          {/* MIRAI-ME 컬러풀 워드마크 (Charlie 지정 폰트) */}
           <Image
             src="/wordmark.png"
             alt="MIRAI-ME"
-            width={642}
+            width={402}
             height={90}
             className="h-9 w-auto bg-transparent mix-blend-multiply md:h-10"
             style={{ isolation: "isolate" }}
