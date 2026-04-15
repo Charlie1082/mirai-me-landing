@@ -137,7 +137,7 @@ export default function HeroSection() {
             className="w-full flex items-center justify-center"
           >
             <Image
-              src="/hero_banner.png"
+              src="/hero_banner.png?v=g2"
               alt="MIRAI-ME"
               width={1152}
               height={920}
