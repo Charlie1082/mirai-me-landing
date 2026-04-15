@@ -32,7 +32,7 @@ export async function generateMetadata({
       url: locale === "ja" ? "https://mirai-me.jp" : "https://mirai-me.jp/ko",
       images: [
         {
-          url: "https://mirai-me.jp/images/og-image.svg",
+          url: "https://mirai-me.jp/og_image.png",
           width: 1200,
           height: 630,
           alt: "MIRAI-ME — AIがつくる、世界にひとつの絵本",
@@ -43,7 +43,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["https://mirai-me.jp/images/og-image.svg"],
+      images: ["https://mirai-me.jp/og_image.png"],
     },
     alternates: {
       languages: {

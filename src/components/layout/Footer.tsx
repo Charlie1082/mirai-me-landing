@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ExternalLink, Globe, Mail } from "lucide-react";
 
@@ -12,9 +13,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <span className="font-display text-xl font-bold text-primary-300">
-              MIRAI-ME
-            </span>
+            {/* E 키 아트 — 사이트 마무리 인상, 슬로건까지 풀 메시지 */}
+            <Image
+              src="/hero_banner.png"
+              alt="MIRAI-ME"
+              width={400}
+              height={320}
+              className="h-24 w-auto brightness-110"
+            />
             <p className="mt-3 text-sm text-warm-300 leading-relaxed">
               {t("tagline")}
             </p>

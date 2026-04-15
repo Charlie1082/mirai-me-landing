@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const navKeys = [
@@ -47,8 +48,18 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
-        <Link href="/" className="font-display text-xl font-bold text-primary-500">
-          MIRAI-ME
+        <Link href="/" className="flex items-center" aria-label="MIRAI-ME">
+          {/* 컬러풀 MIRAI-ME 워드마크 (E 키아트에서 추출, mix-blend-multiply로 페이지에 자연 융합) */}
+          <Image
+            src="/wordmark.png"
+            alt="MIRAI-ME"
+            width={642}
+            height={90}
+            className="h-9 w-auto bg-transparent mix-blend-multiply md:h-10"
+            style={{ isolation: "isolate" }}
+            priority
+            unoptimized
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
