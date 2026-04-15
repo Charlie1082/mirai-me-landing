@@ -13,13 +13,15 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            {/* E 키 아트 — 사이트 마무리 인상, 슬로건까지 풀 메시지 */}
+            {/* 다크 배경 전용 워드마크 — 채도+30%·밝기+35% 강화 PNG */}
             <Image
-              src="/hero_banner.png"
+              src="/wordmark_dark.png"
               alt="MIRAI-ME"
-              width={400}
-              height={320}
-              className="h-24 w-auto brightness-110"
+              width={429}
+              height={96}
+              className="h-12 w-auto"
+              style={{ filter: "drop-shadow(0 2px 8px rgba(255,255,255,0.15))" }}
+              unoptimized
             />
             <p className="mt-3 text-sm text-warm-300 leading-relaxed">
               {t("tagline")}
