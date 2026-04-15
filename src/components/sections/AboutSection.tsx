@@ -30,16 +30,19 @@ export default function AboutSection() {
             const Icon = icons[i];
             return (
               <FadeInOnScroll key={i} delay={i * 0.15}>
-                <div className="group flex h-full flex-col items-center rounded-2xl bg-cream p-8 text-center shadow-sm transition-all duration-300 ease-out hover:scale-[1.06] hover:bg-white hover:shadow-xl">
+                <div className="group flex h-full flex-col items-center rounded-2xl bg-cream p-8 text-center shadow-sm transition-[transform,box-shadow,background-color] duration-300 ease-out hover:scale-[1.05] hover:bg-white hover:shadow-xl">
+                  {/* 아이콘 */}
                   <div
                     className={`flex h-16 w-16 items-center justify-center rounded-full ${iconBgColors[i]} transition-transform duration-300 group-hover:scale-110`}
                   >
                     <Icon className={`h-8 w-8 ${iconTextColors[i]}`} />
                   </div>
-                  <h3 className="mt-5 font-display text-xl font-bold text-warm-800 transition-all duration-300 group-hover:text-2xl group-hover:text-primary-600">
+                  {/* 제목 — font-size 고정, 색상만 변화 (레이아웃 무너짐 방지) */}
+                  <h3 className="mt-5 font-display text-xl font-bold text-warm-800 transition-colors duration-300 group-hover:text-primary-600">
                     {t(feature.titleKey)}
                   </h3>
-                  <p className="mt-3 leading-relaxed text-warm-500 transition-all duration-300 group-hover:text-base group-hover:text-warm-700 md:text-sm">
+                  {/* 설명문 — font-size 고정, 색상만 변화 */}
+                  <p className="mt-3 leading-relaxed text-warm-500 transition-colors duration-300 group-hover:text-warm-700">
                     {t(feature.descKey)}
                   </p>
                 </div>
