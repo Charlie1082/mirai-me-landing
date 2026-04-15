@@ -85,7 +85,7 @@ export default function HeroSection() {
 
           <motion.h1
             variants={itemVariants}
-            className="mt-6 whitespace-pre-line font-display text-4xl font-extrabold leading-tight text-warm-800 md:text-6xl"
+            className="mt-6 font-display text-3xl font-extrabold leading-tight text-warm-800 sm:text-4xl md:text-5xl lg:whitespace-nowrap"
           >
             {t("tagline")}
           </motion.h1>
