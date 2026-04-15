@@ -53,10 +53,9 @@ export default function Header() {
           <Image
             src="/wordmark.png"
             alt="MIRAI-ME"
-            width={402}
-            height={90}
-            className="h-9 w-auto bg-transparent mix-blend-multiply md:h-10"
-            style={{ isolation: "isolate" }}
+            width={804}
+            height={179}
+            className="h-9 w-auto bg-transparent md:h-10"
             priority
             unoptimized
           />

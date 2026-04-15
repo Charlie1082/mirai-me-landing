@@ -141,7 +141,7 @@ export default function HeroSection() {
               alt="MIRAI-ME"
               width={1152}
               height={920}
-              className="hidden w-full max-w-[45rem] bg-transparent mix-blend-multiply md:block"
+              className="hidden w-full max-w-[45rem] bg-transparent md:block"
               style={{ isolation: "isolate" }}
               priority
               unoptimized
@@ -151,7 +151,7 @@ export default function HeroSection() {
               alt="MIRAI-ME"
               width={600}
               height={600}
-              className="block w-full max-w-sm bg-transparent mix-blend-multiply md:hidden"
+              className="block w-full max-w-sm bg-transparent md:hidden"
               style={{ isolation: "isolate" }}
               priority
               unoptimized
