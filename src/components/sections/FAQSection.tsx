@@ -57,14 +57,7 @@ export default function FAQSection() {
   const t = useTranslations("faq");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const items = [
-    { qKey: "items.0.question", aKey: "items.0.answer" },
-    { qKey: "items.1.question", aKey: "items.1.answer" },
-    { qKey: "items.2.question", aKey: "items.2.answer" },
-    { qKey: "items.3.question", aKey: "items.3.answer" },
-    { qKey: "items.4.question", aKey: "items.4.answer" },
-    { qKey: "items.5.question", aKey: "items.5.answer" },
-  ];
+  const items = t.raw("items") as Array<{ question: string; answer: string }>;
 
   return (
     <section id="faq" className="bg-white py-20 md:py-28">
@@ -77,8 +70,8 @@ export default function FAQSection() {
           {items.map((item, i) => (
             <FadeInOnScroll key={i} delay={i * 0.08}>
               <AccordionItem
-                question={t(item.qKey)}
-                answer={t(item.aKey)}
+                question={item.question}
+                answer={item.answer}
                 isOpen={openIndex === i}
                 onToggle={() =>
                   setOpenIndex(openIndex === i ? null : i)
